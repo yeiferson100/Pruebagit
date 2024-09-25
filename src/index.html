@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Practica HTML </title>
+    <style>
+       
+       
+        h1 {
+            color: rgb(4, 0, 255);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        pre {
+            color: #000;
+            font: family 24px;
+            text-align: center;
+            
+        }
+        p {
+            color: rgb(17, 17, 17);
+            font-size: 12px;
+            text-align: center;
+        }
+
+        h3 {
+            color: rgb(4, 0, 255);
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function cambiarColor() {
+            document.querySelector('h1').style.color = 'green';
+            document.querySelectorAll('h3').forEach(h3 => h3.style.color = 'red');
+            document.querySelectorAll('p').forEach(p => p.style.color = 'blue');
+        }
+
+    function validarEnvio() {
+        const nombre = document.querySelector('td:nth-child(1)').textContent;
+        if (nombre === 'Fernando') {
+            alert('Envio realizado correctamente');
+        } else {
+            alert('Nombre no coincide, por favor verifique.');
+        }
+    }
+
+    document.querySelectorAll('button')[0].addEventListener('click', validarEnvio);
+
+    function toggleExperiencia() {
+        const experienciaDiv = document.getElementById('experiencia');
+        if (experienciaDiv.style.display === 'none') {
+            experienciaDiv.style.display = 'block';
+        } else {
+            experienciaDiv.style.display = 'none';
+        }
+    }
+
+    function mostrarAlerta() {
+        alert('Envio realizado correctamente');
+    }
+        
+    </script>
+</head>    
+
+    <body>
+        <div>
+            <h1 class="h1"> Hola Mundo </h1>
+        </div>
+
+        <div>
+
+            <pre border="2" align="center">
+                desarollador de sistemas 
+                practicas para desarrollar
+                sistemas de base de Datos
+            </pre>
+            <p> Soy una persona proactiva con un buen desempeño y poseo varias habilidades para poder obtener resultados.</p>
+        </div>
+
+       <div id="datosPersonales">
+            <h3 class="h3"> Datos personales </h3>
+            <table border="1" align="center">
+                <tr>
+                    <td> Nombre  </td>
+                    <td> Apellido </td>
+                </tr>
+
+                <tr>
+                    <td> Fernando  </td>
+                    <td>  Moutinho </td>
+                </tr>
+
+                <tr>
+                    <td> Yeiferson </td>
+                    <td> Nose tatata </td>
+                </tr>
+            </table>
+       </div>
+      
+       <div id="experiencia">
+            <h3 class="h3"> Experiencia laboral </h3>
+            <table border="1" align="center">
+                <tr>
+                    <td> Empresa   </td>
+                    <td> Puesto </td>
+                </tr>
+
+                <tr>
+                    <td>     Polar  </td>
+                    <td>  Programador </td>
+                </tr>
+
+                
+            </table>
+       </div>
+       
+       <div id="educacion">
+            <h3 class="h3"> Educacion </h3>
+            <table border="1" align="center">
+                <tr>
+                    <td> Universidad   </td>
+                    <td> Carrera    </td>
+                </tr>
+
+                <tr>
+                    <td>   Cuam  </td>
+                    <td>  Infomartica </td>
+                </tr>
+            </table>
+       </div>
+       <br/>
+       <div id="botones" align="center">
+        <table>
+            <tr>
+                <th> <button  onclick="enviarCV()"> Enviar cv</button></th>
+                <th> <button  onclick="mostrarAlerta()"> Enviar mi cv inmediatamente</button></th>
+                <th>  <button onclick="toggleExperiencia()">Mostrar/Ocultar Experiencia</button></th>
+            </tr>
+        </table>
+       </div>
+
+       <div id="acciones " align="center">
+        <table>
+            <tr>
+                <th> <button onclick="cambiarColor()">Cambiar Color</button></th>
+                <th> <button > <a href="https://www.google.com">Cancelar </a> </button></th>
+            </tr>
+        </table>
+       </div>
+
+      
+
+       
+    </body>
+</html>

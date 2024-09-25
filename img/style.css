@@ -1,0 +1,24 @@
+body{
+    background-color:rgb(244, 244, 247)
+    }
+hr{
+    color: black;
+}
+article{
+    color: #000000;
+}
+    h1 {
+        color: blue;
+        text-align:"center";
+    }
+    h3 {
+        text-align:"center";
+        font-size: 14px;
+    }
+    li {
+        color: rgba(6, 18, 6, 0.968);
+    }
+    table{
+        border:rgb(39, 84, 52);
+        text-align:center;
+    }
